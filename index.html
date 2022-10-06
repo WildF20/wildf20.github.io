@@ -817,7 +817,9 @@
 											</div>
 										</li>
 									</ul>
-									<div class="container-fluid" id="course1">
+
+									<!-- Course 1 -->
+									<div class="container-fluid d-none" id="course1">
 										<ul>
 											<li class="mb-2">
 												<div class="row">
@@ -879,11 +881,30 @@
 											</li>
 										</ul>
 									</div>
+									<!-- Course 1 -->
+
+									<!-- Course 2 -->
+									<div class="container-fluid" id="course2" hidden>
+										<ul>
+											<li class="mb-2">
+												<div class="row">
+													<div class="col-6">JQuery Dasar</div>
+													<div class="col-2">Codepolitan</div>
+													<div class="col-2">Oct 2025</div>
+													<div class="col-2">
+														<a class="btn btn-sm btn-outline-light" href="https://www.codepolitan.com/c/FSIUQP0"
+															target="_blank" rel="noopener noreferrer">View</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- /Course 2 -->
 
 									<nav aria-label="pagecourse">
 										<ul class="pagination pagination-sm justify-content-end mt-5">
-											<li class="page-item disabled">
-												<a class="page-link">Previous</a>
+											<li class="page-item">
+												<a class="page-link" id="hide">Hide</a>
 											</li>
 											<li class="page-item active" aria-current="page">
 												<a class="page-link" href="#course1">1</a>
@@ -892,7 +913,7 @@
 												<a class="page-link">2</a>
 											</li>
 											<li class="page-item">
-												<a class="page-link">Next</a>
+												<a class="page-link" id="show">Show</a>
 											</li>
 										</ul>
 									</nav>
@@ -1053,9 +1074,11 @@
 
 		<!-- Custom Script -->
 		<script>
-			$('document').ready(){
-
-			}
+			$(document).ready(function() {
+				console.log('ready');
+				// $course1 = find('#course1');
+				// $course1.show();
+			})
 		</script>
 	</div>
 </body>
